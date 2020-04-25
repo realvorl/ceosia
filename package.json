@@ -1,0 +1,25 @@
+{
+  "name": "ceosia",
+  "version": "1.0.0",
+  "description": "a cli tool to lift your spirit",
+  "main": "bin/index.js",
+  "bin": {
+    "ceosia": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosia",
+    "cli",
+    "colors",
+    "ascii"
+  ],
+  "author": "viorel petcu",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "figlet": "^1.3.0",
+    "node-fetch": "^2.6.0"
+  }
+}
