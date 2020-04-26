@@ -1,16 +1,17 @@
 #!/usr/bin/env node
-const fetch = require('node-fetch');
-const chalk = require('chalk');
+const ceosia = require('../lib/ceosia');
+var argv = require('minimist')(process.argv.slice(2));
 
-fetch("https://api.ecosia.org/v1/trees/count")
-    .then(res => {
-        if (res.ok) {
-            return res.json();
-        }
-    })
-    .then(data => {
-        let { count, rate } = data;
-        let formatedRate = ((rate > 1) ? chalk.green(rate) : chalk.red(rate) + " trees/s");
-        console.log(chalk.green.bold("🌍 " + count + " 🌳 @" + formatedRate));
-    })
-    .catch(error => console.error(error))
+if (argv) {
+    switch (argv['method']) {
+        case "ascii": ceosia.teralminalAscii(); break;
+        case "emoji": ceosia.terminalEmoji(); break;
+        case "undefined": {
+            console.warn(argv['method'] + " UNIMPLEMENTED!");
+            ceosia.terminal();
+        }break;
+        default: ceosia.terminal();
+    }
+} else {
+    ceosia.terminal();
+}
