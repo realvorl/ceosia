@@ -7,7 +7,7 @@
     "ceosia": "./bin/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/index.js --method=$method --color=$color --bgColor=$bgColor --live=$live"
   },
   "keywords": [
     "ecosia",
