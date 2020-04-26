@@ -11,7 +11,7 @@ if (argv) {
             'magentaBright', 'cyanBright', 'whiteBright'];
 
         if (colors.includes(argv['color'])) {
-            style.coloe = argv['color'];
+            style.color = argv['color'];
         };
         if (colors.includes(argv['bgColor'])) {
             style.bgColor = argv['bgColor'];
