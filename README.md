@@ -2,7 +2,7 @@
 
 A simple CLI app to give you the current count of the trees planted by the wonderful people over at **https://www.ecosia.org/**
 
-![alt](media/ecosia.png)
+![ecosia website](media/ecosia.png)
 
 ##  WHY make this?
 
@@ -42,10 +42,12 @@ Some examples:
 
 
 > ceosia --method=emoji --color=red --bgColor=cyan
-> ![alt](media/emoji.png)
+>
+> ![using emoji](media/emoji.png)
 
 > ceosia --method=ascii --color=red --bgColor=yellow
->![alt](media/ascii.png)
+>
+>![ascii art](media/ascii.png)
 
 ---
 # Enjoy ! 
